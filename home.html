@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Boxicons CSS -->
-    <!-- <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Linking Unicons For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>Homepage </title>
 </head>
 
 <body>
-    <nav class="sidebar close">
+    <!-- sidebar done  -->
+    <aside class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
@@ -95,29 +98,52 @@
             <div class="bottom-content">
                 <li class="">
                     <a href="#">
-                        <i class="bx bx-log-out icon"></i>
-                        <span class="text nav-text">Logout</span>
+                        <!-- <i class="bx bx-log-out icon"></i> -->
+                        <i class='bx bx-cog icon'></i>
+                        <span class="text nav-text">Settings</span>
                     </a>
-                </li>
-
-                <li class="mode">
-                    <div class="moon-sun">
-                        <i class="bx bx-moon icon moon"></i>
-                        <i class="bx bx-sun icon sun"></i>
-                    </div>
-                    <span class="mode-text text">Dark Mode</span>
-
-                    <div class="toogle-switch">
-                        <span class="switch"></span>
-                    </div>
-
                 </li>
             </div>
         </div>
-    </nav>
+    </aside>
 
-    <section class="home">
-        <div class="text">Dashboard</div>
+    <!-- main section  -->
+    <section class="main-section">
+        <!-- <div class="text">Dashboard</div> -->
+        <nav class="topbar">
+            <div class="nav-section nav-right">
+                <!-- theme and user image -->
+                <button class="nav-button theme-button">
+                    <i class='bx bx-bell'></i>
+                </button>
+
+                <button class="nav-button theme-button">
+                    <i class="uil uil-moon"></i>
+                </button>
+
+                <!-- <img src="images/user.jpg" alt="User Image" class="user-image"> -->
+                <div class="dropdown user-image">
+                    <div class="profile-header">
+                        <span>Farida</span>
+                        <img src="images/user.jpg" class="user-image" alt="Profile">
+                    </div>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#" class="menu-item">
+                            <i>👤</i>
+                            Profile
+                        </a>
+                        <a href="#" class="menu-item">
+                            <i>📋</i>
+                            Activity Log
+                        </a>
+                        <a href="#" class="menu-item">
+                            <i>↪️</i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </section>
 
     <script src="home.js"></script>
